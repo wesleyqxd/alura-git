@@ -1,0 +1,15 @@
+Iniciar um repository git : git init
+Verificar status do repositorio : git status
+Pedir pro git monitorar arquivo: git add <file>
+Adicionar modificar em um arquivo : git add <file>
+Verificar em qual branch estou : git log
+configurar pra um repositorio apenas : git config --local user.name wesleyfurnas
+configurar pra um repositorio apenas : git config --local user.email wesleyfurnas35@gmail.com
+Verificar alteracoes entre commits : git log -p 
+Visualizar informacoes de forma resumid entre commits : git log --oneline 
+Criar repositorio puro que so armazena as alteracoes nos arquivos e nao os arquivos fisicos propriamente ditos: git initi --bare 
+Git remote lista todos os repositorios remotos que o repositorio atual conhece 
+git remote add local path/past/server_url_past_etc faz repositorio atual enchegar o repositorio remoto path/.. que é renomeado para local  
+verificar caminho do servidor remoto : git remote -v
+clonando um repositorio pra uma pasta especifica : git clone path/repositorio/ name_do_novo_projeto
+Fazendo upload para o servidor remoto: git push servidor_destino servidor_origem
