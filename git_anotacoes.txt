@@ -14,3 +14,4 @@ verificar caminho do servidor remoto : git remote -v
 clonando um repositorio pra uma pasta especifica : git clone path/repositorio/ name_do_novo_projeto
 Fazendo upload para o servidor remoto: git push servidor_destino servidor_origem
 Fazer download de arquivos de repositirio remoto: git pull _repositorio_remoto nome_da_branch
+estou no client2
