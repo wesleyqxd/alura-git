@@ -30,3 +30,4 @@ verificar a lista de stash : git stash list
 aplicar e já remover stash : git stash pop
 navegar a qualquer ponto de desenvolvimento: git checkout commit_number
 Sempre que navegador a um commit, é importante criar um novo branch pra não perder eventuais commits criados naquele ponto de desenvolvimento
+diferença entre commits: git diff num_commit1.. numcommit
