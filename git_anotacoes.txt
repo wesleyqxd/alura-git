@@ -1,3 +1,7 @@
+############################################################
+## LISTA DE COMANDOS DO CURSO INICIAL DO GIT E GITHUB      #
+###########################################################
+
 Iniciar um repository git : git init
 Verificar status do repositorio : git status
 Pedir pro git monitorar arquivo: git add <file>
