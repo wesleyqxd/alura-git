@@ -21,3 +21,10 @@ visualizar linnhas de desenvolvimento git: git log --graph
 adicionar todos os commits do brach de desenvolvimento ao brach principal: git rebase _brach_de_desenvolvimento
  sempre antes de fazer modificacoes dar git pull _servidor_ master 
 atribuir nome de usuario ao commit: git config --local user.name: name_user
+desfazer alteracoes antes de dar commit : git checkout -- nome_do_arquivo
+desfazer alteracoes apos git add  : git reset HEAD nome_do_arquivo
+desfazer commit  : git revert hash_do_commit
+salvar arquivos pra local temporario sem dar commit   : git stash
+aplicar os arquivos salvos temporariamente ao branch de trabalho  : git stash {numero_do_stash}
+verificar a lista de stash : git stash list
+aplicar e já remover stash : git stash pop
