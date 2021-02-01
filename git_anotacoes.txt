@@ -28,3 +28,5 @@ salvar arquivos pra local temporario sem dar commit   : git stash
 aplicar os arquivos salvos temporariamente ao branch de trabalho  : git stash {numero_do_stash}
 verificar a lista de stash : git stash list
 aplicar e já remover stash : git stash pop
+navegar a qualquer ponto de desenvolvimento: git checkout commit_number
+Sempre que navegador a um commit, é importante criar um novo branch pra não perder eventuais commits criados naquele ponto de desenvolvimento
