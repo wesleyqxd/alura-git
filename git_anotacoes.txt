@@ -35,3 +35,6 @@ Adicionar uma tag para gerar versao: git tag -a nome_Da_tag -m Lançando primeir
 comando pra adicionar tag no servidor remoto: git push servidor _nome_da_tag_ 
 para contribuir em projetos aos quais nao é dono, basta fazer um fork no projeto e copiar a url do servidor
 adiciona o servidor remoto na lista de servidores remotos : git remote add endereço_do_servidor_da_fork
+basta  fazer push no servidor da fork e vai em pull request no github eescolhendo os branchs corretos dos projetos  
+clicar em create pull request e adicionar um comment   
+agora vai no servidor principal do projeto e aprova o pull request 
