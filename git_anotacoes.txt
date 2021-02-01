@@ -12,6 +12,6 @@ Git remote lista todos os repositorios remotos que o repositorio atual conhece
 git remote add local path/past/server_url_past_etc faz repositorio atual enchegar o repositorio remoto path/.. que é renomeado para local  
 verificar caminho do servidor remoto : git remote -v
 clonando um repositorio pra uma pasta especifica : git clone path/repositorio/ name_do_novo_projeto
-Fazendo upload para o servidor remoto: git push servidor_destino servidor_origem
+Fazendo upload para o servidor remoto: git push servidor_destino brach_servidor_destino
 Fazer download de arquivos de repositirio remoto: git pull _repositorio_remoto nome_da_branch
 estou no client2
