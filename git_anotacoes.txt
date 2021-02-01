@@ -19,3 +19,5 @@ Adicionar modificacoes de uma brach na brach principal : git checkout master
 Adicionar modificacoes de uma brach na brach principal : git merge _brach_com_modificacoes
 visualizar linnhas de desenvolvimento git: git log --graph
 adicionar todos os commits do brach de desenvolvimento ao brach principal: git rebase _brach_de_desenvolvimento
+ sempre antes de fazer modificacoes dar git pull _servidor_ master 
+atribuir nome de usuario ao commit: git config --local user.name: name_user
