@@ -36,4 +36,7 @@ navegar a qualquer ponto de desenvolvimento: git checkout commit_number
 Sempre que navegador a um commit, é importante criar um novo branch pra não perder eventuais commits criados naquele ponto de desenvolvimento
 diferença entre commits: git diff num_commit1.. numcommit
 Adicionar uma tag para gerar versao: git tag -a nome_Da_tag -m Lançando primeira versão...
-comando pra adicionar tag no servidor remoto: git push servidor _nome_da_tag_ 
+comando pra adicionar tag no servidor remoto: git push servidor _nome_da_tag_
+reduzir o número de commits antes de enviar o pull request é uma boa prática para diminuir o trabalho para o líder do projeto analisar  
+juntar commits em um só : git rebase -i numero_do_commit_base_mais antigo
+ troca pick por s para juntar no pick  e deixa pick apenas no commit que desejar manter para virar commit 
