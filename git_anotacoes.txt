@@ -15,3 +15,5 @@ clonando um repositorio pra uma pasta especifica : git clone path/repositorio/ n
 Fazendo upload para o servidor remoto: git push servidor_destino brach_servidor_destino
 Fazer download de arquivos de repositirio remoto: git pull _repositorio_remoto nome_da_branch
 estou no client2
+Adicionar modificacoes de uma brach na brach principal : git checkout master
+Adicionar modificacoes de uma brach na brach principal : git merge _brach_com_modificacoes
