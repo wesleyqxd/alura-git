@@ -17,3 +17,5 @@ Fazer download de arquivos de repositirio remoto: git pull _repositorio_remoto n
 estou no client2
 Adicionar modificacoes de uma brach na brach principal : git checkout master
 Adicionar modificacoes de uma brach na brach principal : git merge _brach_com_modificacoes
+visualizar linnhas de desenvolvimento git: git log --graph
+adicionar todos os commits do brach de desenvolvimento ao brach principal: git rebase _brach_de_desenvolvimento
