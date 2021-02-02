@@ -1,58 +1,58 @@
-############################################################
-## LISTA DE COMANDOS DO CURSO INICIAL DO GIT E GITHUB      #
-###########################################################
-
-Iniciar um repository git : git init
-Verificar status do repositorio : git status
-Pedir pro git monitorar arquivo: git add <file>
-Adicionar modificar em um arquivo : git add <file>
-Verificar em qual branch estou : git log
-configurar pra um repositorio apenas : git config --local user.name wesleyfurnas
-configurar pra um repositorio apenas : git config --local user.email wesleyfurnas35@gmail.com
-Verificar alteracoes entre commits : git log -p 
-Visualizar informacoes de forma resumid entre commits : git log --oneline 
-Criar repositorio puro que so armazena as alteracoes nos arquivos e nao os arquivos fisicos propriamente ditos: git initi --bare 
-Git remote lista todos os repositorios remotos que o repositorio atual conhece 
-git remote add local path/past/server_url_past_etc faz repositorio atual enchegar o repositorio remoto path/.. que é renomeado para local  
-verificar caminho do servidor remoto : git remote -v
-clonando um repositorio pra uma pasta especifico : git clone path/repositorio/ name_do_novo_projeto
-Fazendo upload para o servidor remoto: git push servidor_destino brach_servidor_destino
-Fazer download de arquivos de repositirio remoto: git pull _repositorio_remoto nome_da_branch
-estou no client2
-Adicionar modificacoes de uma brach na brach principal : git checkout master
-Adicionar modificacoes de uma brach na brach principal : git merge _brach_com_modificacoes
-visualizar linnhas de desenvolvimento git: git log --graph
-adicionar todos os commits do brach de desenvolvimento ao brach principal: git rebase _brach_de_desenvolvimento
- sempre antes de fazer modificacoes dar git pull _servidor_ master 
-atribuir nome de usuario ao commit: git config --local user.name: name_user
-desfazer alteracoes antes de dar commit : git checkout -- nome_do_arquivo
-desfazer alteracoes apos git add  : git reset HEAD nome_do_arquivo
-desfazer commit  : git revert hash_do_commit
-salvar arquivos pra local temporario sem dar commit   : git stash
-aplicar os arquivos salvos temporariamente ao branch de trabalho  : git stash {numero_do_stash}
-verificar a lista de stash : git stash list
-aplicar e já remover stash : git stash pop
-navegar a qualquer ponto de desenvolvimento: git checkout commit_number
-Sempre que navegador a um commit, é importante criar um novo branch pra não perder eventuais commits criados naquele ponto de desenvolvimento
-diferença entre commits: git diff num_commit1.. numcommit
-Adicionar uma tag para gerar versao: git tag -a nome_Da_tag -m Lançando primeira versão...
-comando pra adicionar tag no servidor remoto: git push servidor _nome_da_tag_
-para contribuir em projetos aos quais nao é dono, basta fazer um fork no projeto e copiar a url do servidor
-adiciona o servidor remoto na lista de servidores remotos : git remote add endereço_do_servidor_da_fork
-basta  fazer push no servidor da fork e vai em pull request no github eescolhendo os branchs corretos dos projetos  
-clicar em create pull request e adicionar um comment   
-agora vai no servidor principal do projeto e aprova o pull request 
-reduzir o número de commits antes de enviar o pull request é uma boa prática para diminuir o trabalho para o líder do projeto analisar  
-juntar commits em um só : git rebase -i numero_do_commit_base_mais antigo
- troca pick por s para juntar no pick  e deixa pick apenas no commit que desejar manter para virar commit 
-juntar os n ultimos comits em um só commit: git rebase -i _nome_da_branch_atual_~n  
- põe s onde quer remover o commit e pick onde quer manter o commit; pode ser mais de um com s 
-pegar uma alteracao feita em unico commit :git cherry-pick number_commit 
-buscar parte especifica de codigo modificado em commit: git bisec start
-buscar parte especifica de codigo modificado em commit: git bisect bad HEAD
-seleciona um ponto de inicio onde o trecho de codigo estava ok: git bisect good numer_commit
-verificar o arquivo, caso esteja ok: git bisect good
-verificar o arquivo, caso NAO esteja ok: git bisect bad
-verificar o arquivo, caso NAO esteja ok: repete os passos anteriores 
-verificar alteracoes de um commit : git show commit_hash 
-verificar responsavel por cada linha do arquivo f1: git blame f1 
+     1	############################################################
+     2	## LISTA DE COMANDOS DO CURSO INICIAL DO GIT E GITHUB      #
+     3	###########################################################
+     4	
+     5	Iniciar um repository git : git init
+     6	Verificar status do repositorio : git status
+     7	Pedir pro git monitorar arquivo: git add <file>
+     8	Adicionar modificar em um arquivo : git add <file>
+     9	Verificar em qual branch estou : git log
+    10	configurar pra um repositorio apenas : git config --local user.name wesleyfurnas
+    11	configurar pra um repositorio apenas : git config --local user.email wesleyfurnas35@gmail.com
+    12	Verificar alteracoes entre commits : git log -p 
+    13	Visualizar informacoes de forma resumid entre commits : git log --oneline 
+    14	Criar repositorio puro que so armazena as alteracoes nos arquivos e nao os arquivos fisicos propriamente ditos: git initi --bare 
+    15	Git remote lista todos os repositorios remotos que o repositorio atual conhece 
+    16	git remote add local path/past/server_url_past_etc faz repositorio atual enchegar o repositorio remoto path/.. que é renomeado para local  
+    17	verificar caminho do servidor remoto : git remote -v
+    18	clonando um repositorio pra uma pasta especifico : git clone path/repositorio/ name_do_novo_projeto
+    19	Fazendo upload para o servidor remoto: git push servidor_destino brach_servidor_destino
+    20	Fazer download de arquivos de repositirio remoto: git pull _repositorio_remoto nome_da_branch
+    21	estou no client2
+    22	Adicionar modificacoes de uma brach na brach principal : git checkout master
+    23	Adicionar modificacoes de uma brach na brach principal : git merge _brach_com_modificacoes
+    24	visualizar linnhas de desenvolvimento git: git log --graph
+    25	adicionar todos os commits do brach de desenvolvimento ao brach principal: git rebase _brach_de_desenvolvimento
+    26	 sempre antes de fazer modificacoes dar git pull _servidor_ master 
+    27	atribuir nome de usuario ao commit: git config --local user.name: name_user
+    28	desfazer alteracoes antes de dar commit : git checkout -- nome_do_arquivo
+    29	desfazer alteracoes apos git add  : git reset HEAD nome_do_arquivo
+    30	desfazer commit  : git revert hash_do_commit
+    31	salvar arquivos pra local temporario sem dar commit   : git stash
+    32	aplicar os arquivos salvos temporariamente ao branch de trabalho  : git stash {numero_do_stash}
+    33	verificar a lista de stash : git stash list
+    34	aplicar e já remover stash : git stash pop
+    35	navegar a qualquer ponto de desenvolvimento: git checkout commit_number
+    36	Sempre que navegador a um commit, é importante criar um novo branch pra não perder eventuais commits criados naquele ponto de desenvolvimento
+    37	diferença entre commits: git diff num_commit1.. numcommit
+    38	Adicionar uma tag para gerar versao: git tag -a nome_Da_tag -m Lançando primeira versão...
+    39	comando pra adicionar tag no servidor remoto: git push servidor _nome_da_tag_
+    40	para contribuir em projetos aos quais nao é dono, basta fazer um fork no projeto e copiar a url do servidor
+    41	adiciona o servidor remoto na lista de servidores remotos : git remote add endereço_do_servidor_da_fork
+    42	basta  fazer push no servidor da fork e vai em pull request no github eescolhendo os branchs corretos dos projetos  
+    43	clicar em create pull request e adicionar um comment   
+    44	agora vai no servidor principal do projeto e aprova o pull request 
+    45	reduzir o número de commits antes de enviar o pull request é uma boa prática para diminuir o trabalho para o líder do projeto analisar  
+    46	juntar commits em um só : git rebase -i numero_do_commit_base_mais antigo
+    47	 troca pick por s para juntar no pick  e deixa pick apenas no commit que desejar manter para virar commit 
+    48	juntar os n ultimos comits em um só commit: git rebase -i _nome_da_branch_atual_~n  
+    49	 põe s onde quer remover o commit e pick onde quer manter o commit; pode ser mais de um com s 
+    50	pegar uma alteracao feita em unico commit :git cherry-pick number_commit 
+    51	buscar parte especifica de codigo modificado em commit: git bisec start
+    52	buscar parte especifica de codigo modificado em commit: git bisect bad HEAD
+    53	seleciona um ponto de inicio onde o trecho de codigo estava ok: git bisect good numer_commit
+    54	verificar o arquivo, caso esteja ok: git bisect good
+    55	verificar o arquivo, caso NAO esteja ok: git bisect bad
+    56	verificar o arquivo, caso NAO esteja ok: repete os passos anteriores 
+    57	verificar alteracoes de um commit : git show commit_hash 
+    58	verificar responsavel por cada linha do arquivo f1: git blame f1 
