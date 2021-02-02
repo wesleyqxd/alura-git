@@ -54,3 +54,4 @@ seleciona um ponto de inicio onde o trecho de codigo estava ok: git bisect good 
 verificar o arquivo, caso esteja ok: git bisect good
 verificar o arquivo, caso NAO esteja ok: git bisect bad
 verificar o arquivo, caso NAO esteja ok: repete os passos anteriores 
+verificar alteracoes de um commit : git show commit_hash 
