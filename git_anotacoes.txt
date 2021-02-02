@@ -68,4 +68,4 @@ eventos no git : verifique as permissoes do arquivo, caso precise dê sudo chmod
 testando o evento no .git/hooks/
 realizar operaçao automatica apos receber um push : abrir o arquivo do servidor criado como puro /baree entrar em hooks/ 
 realizar operaçao automatica apos receber um push : criar o arquivo post-receive 
-realizar operaçao automatica apos receber um push : #!/bin/sh git --git-dir=endereco_do_servidor_na_maquina --work-tree=endereco_dos_arquivos_do_push checkout -f 
+realizar operaçao automatica apos receber um push : #!/bin/sh git --git-dir="endereco_do_servidor_" --work-tree="endereco_dos_arquivos_do_push" checkout -f 
