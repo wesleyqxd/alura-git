@@ -56,3 +56,4 @@ verificar o arquivo, caso NAO esteja ok: git bisect bad
 verificar o arquivo, caso NAO esteja ok: repete os passos anteriores 
 verificar alteracoes de um commit : git show commit_hash 
 verificar responsavel por cada linha do arquivo f1: git blame f1 
+remover branch : git branch -d nome_branch
