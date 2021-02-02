@@ -65,3 +65,4 @@ eventos no git : entre na pasta .git/hooks
 eventos no git : crie o arquivo pre-commit e adicione um comando bash
 eventos no git : #!/bin/sh echo "Voce está prestes a commitaar"
 eventos no git : verifique as permissoes do arquivo, caso precise dê sudo chmod +x pre-commit
+testando o evento no .git/hooks/
