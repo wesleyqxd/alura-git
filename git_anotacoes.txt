@@ -60,3 +60,4 @@
 	60 padrao de desenvolvimento git: cria branch master e nao comita; cria branch development; a partir de devevolpment cria branchs de nome  feature/nome_da_feature 
     61 padrao de desenvolvimento : bugs de rapida resolução branch hotfix/nome_do_branch
 antes de gerar uma versão é adequado mudar de branch e colocar release/versaox.x.x
+a tag pode ser criada em master 
