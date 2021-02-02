@@ -48,3 +48,9 @@ juntar commits em um só : git rebase -i numero_do_commit_base_mais antigo
 juntar os n ultimos comits em um só commit: git rebase -i _nome_da_branch_atual_~n  
  põe s onde quer remover o commit e pick onde quer manter o commit; pode ser mais de um com s 
 pegar uma alteracao feita em unico commit :git cherry-pick number_commit 
+buscar parte especifica de codigo modificado em commit: git bisec start
+buscar parte especifica de codigo modificado em commit: git bisect bad HEAD
+seleciona um ponto de inicio onde o trecho de codigo estava ok: git bisect good numer_commit
+verificar o arquivo, caso esteja ok: git bisect good
+verificar o arquivo, caso NAO esteja ok: git bisect bad
+verificar o arquivo, caso NAO esteja ok: repete os passos anteriores 
