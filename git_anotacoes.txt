@@ -56,3 +56,6 @@
     56	verificar o arquivo, caso NAO esteja ok: repete os passos anteriores 
     57	verificar alteracoes de um commit : git show commit_hash 
     58	verificar responsavel por cada linha do arquivo f1: git blame f1 
+	59 remover branch : git branch -d nome_branch
+	60 padrao de desenvolvimento git: cria branch master e nao comita; cria branch development; a partir de devevolpment cria branchs de nome  feature/nome_da_feature 
+    61 padrao de desenvolvimento : bugs de rapida resolução branch hotfix/nome_do_branch
